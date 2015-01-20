@@ -1,0 +1,12 @@
+<h3><%= @hand.title %></h3>
+
+<a href="pic">
+  <img src="<%= @hand.url %>" style="width:600px;height:400px;border:0">
+</a>
+
+<h4><%= @hand.description %></h4>
+
+<a href="/">Back</a>
+<form action="/delete_hand/<%= @hand.id %>" method="post">
+<input type="hidden" name="_method" value="delete">
+<input type="submit" value="Delete"></form>

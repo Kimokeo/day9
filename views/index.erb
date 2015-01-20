@@ -1,0 +1,14 @@
+<body>
+<h2>List</h2>
+<a href="/new">Create post</a>
+<ul>
+	<% @hands.each do |hand|%>
+		<li>
+			<strong><a href="/hand/<%= hand.id %>"
+			<%= hand.title %></a></strong>
+			<%= hand.url %>
+			<%= hand.description %>
+		</li>
+	<% end %>
+</ul>
+</body>
